@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, rgb(104, 1, 45), rgb(59, 18, 180));
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::selection {
+  background: rgb(0, 123, 255, 0.3);
+}
+.content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 25px 0;
+  transition: all 0.3s ease;
+}
+.navbar.sticky {
+  background: #1b1b1b;
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.navbar .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .logo a {
+  color: rgb(248, 248, 248);
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 1230px) {
+  .content {
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .content {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 900px) {
+  .content {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 868px) {
+  body.disabled {
+    overflow: hidden;
+  }
+}
+@media (max-width: 380px) {
+  .navbar .logo a {
+    font-size: 27px;
+  }
+}
+
+.intermediate-heading {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10rem;
+}
+
+.parallax-inner h1 {
+  font-size: 55px;
+  text-align: center;
+  color: rgba(138, 255, 245, 0.58);
+}
+
+.parallax-1 {
+  background: url("./developer.jpeg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.parallax-2 {
+  background: url("./website.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.parallax-3 {
+  background: url("./purpose.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.parallax-inner {
+  padding: 10% 0;
+}
+
+.section-intermediate h2 {
+  font-size: 32px;
+  color: #d2cece;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 20px 0 10px;
+}
+
+.section-intermediate p {
+  border-radius: 10px;
+  height: 25vh;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  margin: 0 50px 40px;
+}
+
+@media screen and (max-width: 1320px) {
+  .section-intermediate p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section-intermediate h2 {
+    font-size: 25px;
+  }
+  .section-intermediate p {
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .section-intermediate p {
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .section-intermediate p {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .section-intermediate p {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .section-intermediate p {
+    height: 65vh;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .section-intermediate p {
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .section-intermediate p {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .section-intermediate p {
+    height: 125vh;
+  }
+}
